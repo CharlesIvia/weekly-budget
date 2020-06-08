@@ -50,9 +50,35 @@
                 disabled
               />
             </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="amount"
+                  placeholder="Ex: 250"
+                  disabled
+                />
+              </div
+            <button type="submit" class="btn btn-default" id="add-btn">
+              Add
+            </button>
           </form>
+
+          <div id="message-second"></div>
+        </div>
+
+        <div class="col-md-6">
+          <div>
+            <h4 class="bg-info" id="budget">Budget: <span>KSH.</span>00</h4>
+            <h4 class="bg-success" id="left">Budget: <span>KSH.</span>00</h4>
+          </div>
+
+          <h4>My Expense</h4>
+          <ul class="list-group" id="list"></ul>
         </div>
       </div>
     </main>
+
   </body>
 </html>
