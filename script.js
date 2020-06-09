@@ -9,6 +9,7 @@ const myBudget = document.querySelector("#budget-info");
 const amountLeft = document.querySelector("#budget-info-two");
 const expenseList = document.querySelector("#list");
 const firstMessage = document.querySelector("#first-message");
+let secondMessage = document.querySelector("#second-message");
 const addBtn = document.querySelector("#second-btn");
 let budget;
 
@@ -84,4 +85,21 @@ function updateBudget(expense) {
   budget = total;
   amountLeft.textContent = budget;
   checkBudget(budget);
+}
+
+//Check balance status
+
+function checkBudget() {
+  let initialBudget = Number(myBudget.textContent);
+
+  if (budget <= 0.5 * initialBudget) {
+    amountLeft.style.background = "orange";
+  }
+  if (budget <= 0.25 * initialBudget) {
+    amountLeft.style.background = "red";
+  }
+  if (budget <= 0) {
+    amountLeft.style.background = "red";
+    secondMessage.textContent = "You have used up your budget for the week!";
+  }
 }
