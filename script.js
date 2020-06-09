@@ -61,3 +61,18 @@ function addExpense(e) {
   addToList(name, amount);
   updateBudget(amount);
 }
+
+//Add to list functionality
+
+function addToList(item, value) {
+  if (item != "" && value != "") {
+    let li = document.createElement("li");
+    let span = document.createElement("span");
+    li.className = "list-item";
+    span.className = "badge";
+    span.textContent = value;
+    li.textContent = item;
+    li.appendChild(span);
+    expenseList.appendChild(li);
+  }
+}
