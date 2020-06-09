@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
 });
 
 firstForm.addEventListener("submit", init);
-// secondForm.addEventListener("submit", addExpense);
+secondForm.addEventListener("submit", addExpense);
 
 //Helper functions
 
@@ -41,9 +41,23 @@ function init(e) {
   }
 }
 
+//Enable form
+
 function enableForm() {
   expenseName.disabled = false;
   expenseAmount.disabled = false;
   addBtn.disabled = false;
   firstForm.parentElement.style.display = "none";
+}
+
+//Add expense on add button click
+
+function addExpense(e) {
+  e.preventDefault();
+  let name = expenseName.value;
+  let amount = expenseAmount.value;
+  secondForm.reset();
+  expenseName.focus();
+  addToList(name, amount);
+  updateBudget(amount);
 }
