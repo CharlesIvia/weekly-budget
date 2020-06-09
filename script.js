@@ -9,3 +9,12 @@ const myBudget = document.querySelector("#budget-info");
 const amountLeft = document.querySelector("#budget-info-two");
 const expenseList = document.querySelector("#list");
 let budget;
+
+//Event listeners
+
+window.addEventListener("load", () => {
+  enterBudget.focus();
+});
+
+firstForm.addEventListener("submit", init);
+secondForm.addEventListener("submit", addExpense);
