@@ -8,6 +8,7 @@ const secondForm = document.querySelector("#second-form");
 const myBudget = document.querySelector("#budget-info");
 const amountLeft = document.querySelector("#budget-info-two");
 const expenseList = document.querySelector("#list");
+const firstMessage = document.querySelector("#first-message");
 let budget;
 
 //Event listeners
@@ -17,4 +18,24 @@ window.addEventListener("load", () => {
 });
 
 firstForm.addEventListener("submit", init);
-secondForm.addEventListener("submit", addExpense);
+// secondForm.addEventListener("submit", addExpense);
+
+//Helper functions
+
+function init(e) {
+  e.preventDefault();
+  budget = enterBudget.value;
+
+  if (budget !== "") {
+    enableForm();
+    expenseName.focus();
+    myBudget.textContent = budget;
+    amountLeft.textContent = budget;
+  } else {
+    firstMessage.textContent = "This field can't be empty!";
+
+    setTimeout(() => {
+      firstMessage.style.display = "none";
+    }, 2000);
+  }
+}
