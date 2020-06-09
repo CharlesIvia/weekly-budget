@@ -35,7 +35,7 @@ header {
 }
 
 .first {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .formed {
@@ -74,17 +74,26 @@ header {
   width: 50%;
 }
 
-.second-form-input {
+.second-form-input,
+.third-form-input {
   display: flex;
   flex-direction: column;
 }
 
-.formed-two {
+.formed-two, .formed-three {
   width: 90%;
   height: 3.5vh;
   border-radius: 3px;
-  margin: 12px 0px 12px 0px;
+  margin: 15px 0px 15px 0px;
   padding-left: 10px;
   font-size: 20px;
-  background: rgb(176, 216, 221);
+  background: rgb(221, 176, 210);
+}
+
+.second-btn {
+  height: 3.5vh;
+  width: 5vw;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
 }
