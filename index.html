@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="style.css" />
     <title>Weekly | Budget</title>
   </head>
@@ -20,9 +14,9 @@
 
     <main>
       <div class="container">
-        <div class="col-md-12">
-          <form id="form-first" class="form-inline">
-            <div class="form-group">
+        <div class="first">
+          <form id="first-form" class="first-form">
+            <div class="first-form-input">
               <input
                 type="number"
                 class="form-control"
@@ -30,17 +24,19 @@
                 placeholder="Enter Amount to Spent This Week"
               />
             </div>
-            <button type="submit" class="btn btn-default" id="button-one">
+            <button type="submit" class="first-btn" id="first-btn">
               Enter
             </button>
           </form>
+
           <div id="message-first"></div>
         </div>
 
-        <div class="col-md-6">
+        <div class="second">
           <h4>Add your expenses here:</h4>
-          <form id="form-second">
-            <div class="form-group">
+
+          <form id="second-form" class="second-form">
+            <div class="second-form-input">
               <label for="name">Name</label>
               <input
                 type="text"
@@ -50,17 +46,19 @@
                 disabled
               />
             </div>
-            <div class="form-group">
-                <label for="amount">Amount</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="amount"
-                  placeholder="Ex: 250"
-                  disabled
-                />
-              </div
-            <button type="submit" class="btn btn-default" id="add-btn">
+
+            <div class="third-form-input">
+              <label for="amount">Amount</label>
+              <input
+                type="number"
+                class="form-control"
+                id="amount"
+                placeholder="Ex: 250"
+                disabled
+              />
+            </div>
+
+            <button type="submit" class="second-btn" id="second-btn">
               Add
             </button>
           </form>
@@ -68,24 +66,26 @@
           <div id="message-second"></div>
         </div>
 
-        <div class="col-md-6">
+        <div class="expenses">
           <div>
-            <h4 class="bg-info" id="budget">Budget: <span>KSH.</span>00</h4>
-            <h4 class="bg-success" id="left">Budget: <span>KSH.</span>00</h4>
+            <h4 class="budget-info" id="budget-info">
+              Budget: <span>KSH.</span>00
+            </h4>
+            <h4 class="budget-info-two" id="budget-info-two">
+              Budget: <span>KSH.</span>00
+            </h4>
           </div>
 
           <h4>My Expense</h4>
-          <ul class="list-group" id="list"></ul>
+          <ul class="list" id="list"></ul>
         </div>
       </div>
     </main>
-    <footer class="footer">
-        <p class="text-center">Coded by <a href="https://github.com/CharlesIvia">Charles Ivia</a></p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
+    <footer class="footer">
+      <p class="coded-by">
+        Coded by <a href="https://github.com/CharlesIvia">Charles Ivia</a>
+      </p>
+    </footer>
   </body>
 </html>
