@@ -86,6 +86,12 @@ header > .text-center {
 .second,
 .expenses {
   width: 50%;
+  margin-top: 20px;
+  padding-right: 5px;
+}
+
+.second {
+  padding-left: 30px;
 }
 
 .second-form-input,
@@ -137,11 +143,6 @@ header > .text-center {
   font-size: 22px;
 }
 
-.list {
-  max-height: 30vh;
-  overflow: scroll;
-}
-
 /* Style footer */
 
 .footer {
@@ -159,6 +160,24 @@ header > .text-center {
 .first-massage,
 .second-message {
   color: red;
-  font-size: 1.75rem;
-  margin-top: 5px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.list {
+  max-height: 30vh;
+  overflow: scroll;
+  width: 90%;
+  display: flex;
+  flex: 10;
+  flex-direction: column;
+}
+
+.badge {
+  text-align: right;
+  margin-left: 70%;
+  width: 50px;
+  margin-bottom: 5px;
+  color: rgb(5, 5, 5);
+  align-items: left;
 }
