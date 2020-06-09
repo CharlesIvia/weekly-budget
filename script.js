@@ -76,3 +76,12 @@ function addToList(item, value) {
     expenseList.appendChild(li);
   }
 }
+
+//Update budget amount after adding an item
+
+function updateBudget(expense) {
+  let total = budget - expense;
+  budget = total;
+  amountLeft.textContent = budget;
+  checkBudget(budget);
+}
