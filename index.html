@@ -19,7 +19,7 @@
             <div class="first-form-input">
               <input
                 type="number"
-                class="form-control"
+                class="formed"
                 id="enter-budget"
                 placeholder="Enter Amount to Spent This Week"
               />
@@ -29,55 +29,57 @@
             </button>
           </form>
 
-          <div id="message-first"></div>
+          <div id="first-message" class="first-message"></div>
         </div>
+        <div class="second-expenses">
+          <div class="second">
+            <h4>Add your expenses here:</h4>
 
-        <div class="second">
-          <h4>Add your expenses here:</h4>
+            <form id="second-form" class="second-form">
+              <div class="second-form-input">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="formed-two"
+                  id="name"
+                  placeholder="E.g: Vegetables"
+                  disabled
+                />
+              </div>
 
-          <form id="second-form" class="second-form">
-            <div class="second-form-input">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="E.g. Vegetables"
-                disabled
-              />
-            </div>
+              <div class="third-form-input">
+                <label for="amount">Amount</label>
+                <input
+                  type="number"
+                  class="formed-three"
+                  id="amount"
+                  placeholder="Eg: 250"
+                  disabled
+                />
+              </div>
 
-            <div class="third-form-input">
-              <label for="amount">Amount</label>
-              <input
-                type="number"
-                class="form-control"
-                id="amount"
-                placeholder="Ex: 250"
-                disabled
-              />
-            </div>
+              <button type="submit" class="second-btn" id="second-btn">
+                Add
+              </button>
+            </form>
 
-            <button type="submit" class="second-btn" id="second-btn">
-              Add
-            </button>
-          </form>
-
-          <div id="message-second"></div>
-        </div>
-
-        <div class="expenses">
-          <div>
-            <h4 class="budget-info" id="budget-info">
-              Budget: <span>KSH.</span>00
-            </h4>
-            <h4 class="budget-info-two" id="budget-info-two">
-              Budget: <span>KSH.</span>00
-            </h4>
+            <div id="second-message" class="secon-message"></div>
           </div>
 
-          <h4>My Expense</h4>
-          <ul class="list" id="list"></ul>
+          <div class="expenses">
+            <div>
+              <h4 class="budget-info" id="budget-info">
+                Budget: <span>KSH.</span>00
+              </h4>
+              <h4 class="budget-info-two" id="budget-info-two">
+                Budget: <span>KSH.</span>00
+              </h4>
+            </div>
+            <div class="my-expenses">
+              <h4>My Expenses</h4>
+              <ul class="list" id="list"></ul>
+            </div>
+          </div>
         </div>
       </div>
     </main>
