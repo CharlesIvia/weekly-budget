@@ -12,11 +12,14 @@ body {
   background: linear-gradient(#a1c4fd 0%, #c2e9fb);
 }
 
-header {
+header > .text-center {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 40px;
+  color: white;
+  padding-top: 5.5vh;
+  padding-bottom: 25px;
 }
 
 /* Style main container */
