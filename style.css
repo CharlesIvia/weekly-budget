@@ -46,6 +46,7 @@ header {
   font-size: 22px;
   outline: none;
   padding-left: 10px;
+  border: 2px solid grey;
 }
 
 .formed:focus {
@@ -88,7 +89,7 @@ header {
   margin: 15px 0px 15px 0px;
   padding-left: 10px;
   font-size: 20px;
-  background: rgb(221, 176, 210);
+  background: rgb(238, 232, 237);
 }
 
 .second-btn {
@@ -103,7 +104,7 @@ header {
 .budget-info-two {
   height: 4vh;
   width: 90%;
-  background: rgb(48, 152, 187);
+  background: rgb(131, 203, 228);
   font-size: 22px;
   font-weight: 500;
   padding-top: 8.5px;
