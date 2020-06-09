@@ -40,7 +40,7 @@ header {
 
 .formed {
   margin-right: 20px;
-  height: 3.5vh;
+  height: 4vh;
   width: 20vw;
   border-radius: 5px;
   font-size: 22px;
@@ -53,7 +53,7 @@ header {
 }
 
 .first-btn {
-  height: 3.5vh;
+  height: 4vh;
   width: 7.5vw;
   font-size: 22px;
   font-weight: 600;
@@ -80,9 +80,10 @@ header {
   flex-direction: column;
 }
 
-.formed-two, .formed-three {
+.formed-two,
+.formed-three {
   width: 90%;
-  height: 3.5vh;
+  height: 4vh;
   border-radius: 3px;
   margin: 15px 0px 15px 0px;
   padding-left: 10px;
@@ -91,9 +92,25 @@ header {
 }
 
 .second-btn {
-  height: 3.5vh;
+  height: 4vh;
   width: 5vw;
   font-size: 22px;
   font-weight: 600;
   margin-top: 20px;
+}
+
+.budget-info,
+.budget-info-two {
+  height: 4vh;
+  width: 90%;
+  background: rgb(48, 152, 187);
+  font-size: 22px;
+  font-weight: 500;
+  padding-top: 7.5px;
+  padding-left: 7.5px;
+  border-radius: 3px;
+}
+
+.budget-info-two {
+  background: lightgreen;
 }
