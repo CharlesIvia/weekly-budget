@@ -9,6 +9,7 @@ const myBudget = document.querySelector("#budget-info");
 const amountLeft = document.querySelector("#budget-info-two");
 const expenseList = document.querySelector("#list");
 const firstMessage = document.querySelector("#first-message");
+const addBtn = document.querySelector("#second-btn");
 let budget;
 
 //Event listeners
@@ -38,4 +39,11 @@ function init(e) {
       firstMessage.style.display = "none";
     }, 2000);
   }
+}
+
+function enableForm() {
+  expenseName.disabled = false;
+  expenseAmount.disabled = false;
+  addBtn.disabled = false;
+  firstForm.parentElement.style.display = "none";
 }
